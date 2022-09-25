@@ -7,12 +7,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background: #7AD7F0;
+}
+
 .head{
     padding: 2rem 0;
 }
 
 .head h1{
     font-size: 3.5rem;
+    color: #020c15;
 }
 
 .head p{
@@ -39,8 +44,8 @@
 }
 
 #area{
-    background:rgba(128, 128, 128, 0.25);
-    border-radius: 0.3rem;
+    background:rgba(255, 255, 255, 0.773);
+    border-radius: 0.8rem;
     width: 95%;
     height: 50vh;
     margin: 2rem;
@@ -50,3 +55,18 @@ iframe #area{
       height: 100%;
       width: 100%;
 }
+
+.textarea{
+    margin: 3rem 10rem;
+}
+
+.border{
+    width: 100%;
+    background-color: #B7E9F7;
+    border-radius: 2rem;
+    -webkit-box-shadow: 3px 9px 34px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 9px 34px -7px rgba(0,0,0,0.75);
+box-shadow: 3px 9px 34px -7px rgba(0,0,0,0.75);
+}
+
+
