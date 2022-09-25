@@ -1,72 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #559ae9;
+  }
 
-body{
-    background: #7AD7F0;
-}
+  .heading{
+    padding: 3rem 0;
+    color: white;
+  }
 
-.head{
-    padding: 2rem 0;
-}
+  .heading h1{
+    font-size: 3.0rem;
+  }
 
-.head h1{
-    font-size: 3.5rem;
-    color: #020c15;
-}
+  .container {
+    background-color: #ffffff;
+    width: 90vmin;
+    padding: 45px 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 52%;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+  }
 
-.head p{
-    font-size: 1.0rem;
-}
-
-.editor{
+  .options {
     display: flex;
-    flex-direction: column;
-}
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
 
-.icons{
+
+  button {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+    color: #020929;
+  }
+
+  .input-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-}
+    align-items: center;
+    gap: 8px;
+  }
+  
+  input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+  }
+  input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+  }
 
-.btn{
-    padding: 0.6rem 1rem;
-    border-radius: 0.4rem;
-    /* border: none; */
-}
-
-#area{
-    background:rgba(255, 255, 255, 0.773);
-    border-radius: 0.8rem;
-    width: 95%;
+  
+  #text-input {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    padding: 20px;
     height: 50vh;
-    margin: 2rem;
-}
-
-iframe #area{
-      height: 100%;
-      width: 100%;
-}
-
-.textarea{
-    margin: 3rem 10rem;
-}
-
-.border{
-    width: 100%;
-    background-color: #B7E9F7;
-    border-radius: 2rem;
-    -webkit-box-shadow: 3px 9px 34px -7px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 9px 34px -7px rgba(0,0,0,0.75);
-box-shadow: 3px 9px 34px -7px rgba(0,0,0,0.75);
-}
-
-
+  }
+  
+  .active {
+    background-color: #e0e9ff;
+  }

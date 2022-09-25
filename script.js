@@ -1,30 +1,23 @@
 
-window.addEventListener("load",function()
-{
-var editor = area.document;
-editor.designMode = "on";
-
-// bold
 bold.addEventListener("click",function(){
-    editor.execCommand("Bold",false,null)
-},false);
-
-// underline
-underline.addEventListener("click",function(){
-    editor.execCommand("Underline",false,null)
-},false);
-
-// copy
-copy.addEventListener("click",function(){
-    editor.execCommand('copy');
+    document.execCommand('bold',false,null);
 })
 
-paste.addEventListener("click", () => {
-var a; 
-let text =  navigator.clipboard.readText().then((t) => t = a);
-console.log(a);
+italic.addEventListener("click",function(){
+    document.execCommand('italic',false,null);
+})
 
-});
+underline.addEventListener("click",function(){
+    document.execCommand('underline',false,null);
+})
 
-}
-);
+undo.addEventListener("click",function(){
+    document.execCommand("undo",false,null);
+})
+
+redo.addEventListener("click",function(){
+  document.execCommand("redo",false,null);
+})
+
+
+
