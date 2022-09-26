@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rich Text Editor</title>
+    <title>Text Editor</title>
     <!-- FontAwesome Icons -->
     <link
       rel="stylesheet"
@@ -25,6 +25,9 @@
     <div class="container">
       <div class="options">
         <!-- Text Format -->
+        <button id="newb" class="option-button format">
+          New
+        </button>
         <button id="bold" class="option-button format">
           <i class="fa-solid fa-bold"></i>
         </button>
@@ -33,6 +36,9 @@
         </button>
         <button id="underline" class="option-button format">
           <i class="fa-solid fa-underline"></i>
+        </button>
+        <button id="copy" class="option-button format">
+          Copy
         </button>
 
         <!-- Undo/Redo -->
@@ -45,9 +51,10 @@
 
         <!-- Color -->
         <div class="input-wrapper">
-          <input type="color" id="foreColor" class="adv-option-button" />
+          <input type="color" id="foreColor" class="adv-option-button"/>
           <label for="foreColor">Font Color</label>
         </div>
+
       </div>
 
       <div id="text-input" contenteditable="true"></div>
